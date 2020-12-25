@@ -12,7 +12,7 @@ function geojson(features) {
   for (feature in features) {
     let lng = features[feature].longitude;
     let lat = features[feature].latitude;
-    if ($.isNumeric(lng) && $.isNumeric(lat) && lng < 1 && lng > -4 && lat < 54 && lat > 50) {
+    if ($.isNumeric(lng) && $.isNumeric(lat) && lng < 2 && lng > -4 && lat < 54 && lat > 50) {
       var plak = {
         "type": "Feature",
         "geometry": {
